@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<!--
+	Based Upon Landed by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>RoboSim</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="../../assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="../../assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="../../assets/css/ie8.css" /><![endif]-->
+		
+		<!-- SEO Stuff -->
+		<META NAME="description" CONTENT="A page about the robotics simulator that I contributed to during the COMP105P: Robotics module at UCL">
+		<META NAME="keyword" CONTENT="robosim,robot,simulator,python,david,xiao,xiao93,davidxiao,davidxiao93,ucl,computer,science,compsci">
+			
+		<!-- favicon stuff -->
+		<link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico">
+	</head>
+	<body>
+		<div id="page-wrapper">
+			<!-- RoboSim -->
+				<section id="RoboSim" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>RoboSim</h2>
+						</header>
+						<!-- Content -->
+							<section id="content">
+								<img class="image dsOnly" src="RoboSim/robot.jpg" alt="" />
+								<p>For the COMP105P Robotics Module, we were tasked with creating a program that would run on a custom robot. However, due to the limited numbers of custom robots, we were given access to a version of RoboSim, written in Python, created by the module's lecturer that allowed us to test programs in a simulator on screen. </p>
+
+								<img class="image dsOnly" src="RoboSim/originalRoboSim.jpg" alt="" />
+								<p>From my point of view, the simulator meant more development time. Very quickly however, I started to wish for various features. Having no experience in python, I thought this was a perfect time to dive in. </p>
+								
+								<img class="image dsOnly" src="RoboSim/customRoboSim.jpg" alt="" />
+								<p>The first feature that I added was a request from another computer science student at UCL. He was partially colour blind, and was having trouble differentiating the points created by set_point(red) and log_trail(red-brown). So I added a colour picker for both of these points into the menu.</p>
+								
+								<p>A feature that I was very keen on was to speed up simulation. This was requested by many and by doing this, the rate of testing could be increased. This was achieved by adding a multiplier to the frame rate limiter.</p>
+								
+								<img class="image dsOnly" src="RoboSim/switches.jpg" alt="" />
+								<p>Other usability improvements I added include the ability to maximise the window which required adjusting the UI to be able to handle this change better, keyboard shortcuts such as the Spacebar to reset and arrow keys to drive the robot, and the ability to globally turn on or off log_trail and set_point independently.</p>
+								
+								<p>Overall I found it a fun experience, and in making these changes (especially the speed up ability) I like to think that I had saved a lot of development time for everyone. You can download the current version here: </p>
+								<section id="download" class="align-center">
+									<div class="12u$ 12u$(medium) 12u$(xsmall)">
+										<a href="https://drive.google.com/file/d/0BytxKhUGDf5NSXkzN0labC1fWTA/view?usp=sharing" class="button">RoboSim v2.2.0 Xiao Edition</a>
+										<a href="https://drive.google.com/file/d/0BytxKhUGDf5NbWFCaFQyU0h2Tzg/view?usp=sharing" class="button">RoboSim v2.2.3 Xiao Edition Beta</a>
+									</div>
+								</section>
+							</section>
+					</div>
+				</section>
+				
+			<!-- Nav -->
+				<script type="text/javascript" src="../../assets/js/scripts.js"></script>
+				<script type='text/javascript' > 
+					var rootPath = '../../'; 
+				</script>
+				<script type="text/javascript">writeNav()</script>
+				
+			<!-- Footer -->
+				<script type="text/javascript">writeFooter()</script>
+
+		</div>
+
+		<!-- Scripts -->
+			<script type="text/javascript">writeScripts()</script>
+			
+		<!-- Image expanding handlers -->
+			<script type='text/javascript' > 
+				$(".dsOnly").one("click", expandImage);
+			</script>
+
+	</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<!--
+	Based Upon Landed by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>WOL Anywhere</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="../../assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="../../assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="../../assets/css/ie8.css" /><![endif]-->
+		
+		<!-- SEO Stuff -->
+		<META NAME="description" CONTENT="A page about a project where a Raspberry Pi is used to send a Wake On Lan signal to a local computer after a file on its web server is accessed.">
+		<META NAME="keyword" CONTENT="raspberry,pi,wake,on,lan,wol,david,xiao,xiao93,davidxiao,davidxiao93,ucl,computer,science,compsci">
+			
+		<!-- favicon stuff -->
+		<link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico">
+	</head>
+	<body>
+		<div id="page-wrapper">
+			<!-- Balance Game -->
+				<section id="WOL Anywhere" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>WOL Anywhere</h2>
+						</header>
+						<!-- Content -->
+							<section id="content">
+							
+								<p>During the second half of 2014, I started to use remote desktop functionality a lot more. This was driven my the Chromebook that I had not having sufficient compute power. At first I used the Google Chrome extension for Remote Desktop, but after experimenting with various other remote desktop methods, I ended up with the Microsoft Remote Desktop Client built into Windows.</p>
+								
+								<p>One of the problems that I had with it was that there was no way to turn on my computer when away from home. This meant that in order to remote desktop to my computer, I had to leave it on all the time. </p>
+								
+								<img class="image dsOnly" src="WOLanywhere/raspberryPi.jpg" alt="" />
+								<p>Upon seeing a deal for a Raspberry Pi from Amazon, I thought it would be fun to play with it and see if I could use it to allow me to turn on my computer remotely. I installed Raspbian as it was easy and we didn't need the performance other platforms may have given. I installed a simple web server onto it where upon accessing a page, the Raspberry Pi would then send the magic packet to my computer.</p>
+								
+								<img class="image dsOnly" src="WOLanywhere/pagenotfound.jpg" alt="" />
+								<p>This project has been invaluable to me. It means that I only need to access a particular file on my Raspberry Pi to turn on my computer and this meant that I no longer had to remember to turn on my computer every morning. I also ended up creating an Android application to streamline the process even further. More information about the application can be found here.</p>
+								
+								
+								<section id="sectionButton" class="align-center">
+									<div class="container">
+										<div class="12u$ 12u$(medium) 12u$(xsmall)">
+											<a href="../Android/WebsiteLauncher.html" class="button">Website Launcher</a>
+										</div>
+									</div>
+								</section>
+							</section>
+					</div>
+				</section>
+				
+			<!-- Nav -->
+				<script type="text/javascript" src="../../assets/js/scripts.js"></script>
+				<script type='text/javascript' > 
+					var rootPath = '../../'; 
+				</script>
+				<script type="text/javascript">writeNav()</script>
+				
+			<!-- Footer -->
+				<script type="text/javascript">writeFooter()</script>
+
+		</div>
+
+		<!-- Scripts -->
+			<script type="text/javascript">writeScripts()</script>
+			
+		<!-- Image expanding handlers -->
+			<script type='text/javascript' > 
+				$(".dsOnly").one("click", expandImage);
+			</script>
+
+	</body>
+</html>

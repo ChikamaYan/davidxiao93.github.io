@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<!--
+	Based Upon Landed by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Website Launcher</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="../../assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="../../assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="../../assets/css/ie8.css" /><![endif]-->
+		
+		<!-- SEO Stuff -->
+		<META NAME="description" CONTENT="A page about an application I created as an extension of my Wake On Lan Anywhere system.">
+		<META NAME="keyword" CONTENT="website,launcher,raspberry,pi,android,david,xiao,xiao93,davidxiao,davidxiao93,ucl,computer,science,compsci">
+			
+		<!-- favicon stuff -->
+		<link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico">
+	</head>
+	<body>
+		<div id="page-wrapper">
+			<!-- Simple Speedo -->
+				<section id="sectionWebsiteLauncher" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>Website Launcher</h2>
+						</header>
+						<!-- Content -->
+							<section id="content">
+								
+							<img class="image dsOnly" src="WebsiteLauncher/raspberryPi.jpg" alt="" />
+							<section id="sectionButton" class="align-center">
+								<div class="container">
+									<div class="12u$ 12u$(medium) 12u$(xsmall)">
+										<a href="../Hardware/WOLanywhere.html" class="button">WOL Anywhere</a>
+									</div>
+								</div>
+							</section>
+							
+							<p>After creating a small independent website server with my Raspberry Pi, I wanted to be able to open it very quickly on demand, without having to remember my public IP address, port number and file name. For a short time, I used a bookmark and while this worked, it proved cumbersome.</p>
+							
+							<img class="image dsOnly" src="WebsiteLauncher/pageNotfound.jpg" alt="" />
+							
+							<p>I set about creating this application so that I could at a single press, turn on my computer. All the application had to do was open up a predetermined file at a predetermined address. However, I wanted to make the application feel more like a button, like an Android widget, but inside the App Drawer.</p>
+							
+							
+							<p>Thus I played around with ways of having the application open invisibly, and self close if it was successful at connecting to the Raspberry Pi. At around the same time, our broadband provider was experiencing numerous issues. As this meant a constant changing of routers, this had the unfortunate side effect of changing the public IP address of my Raspberry Pi.</p>
+							
+							<img class="image dsOnly" src="WebsiteLauncher/textStorage.jpg" alt="" />
+							<p>With that in mind, I added in a file into the application data that it would read on opening and use the included IP address as the target to open. Thus if the public IP address needed to be changed, I could simple modify a single .txt file with a file manager.</p>
+							
+							<p>Although this application is smaller and has fewer features, it has become my favourite application. This combined with the Android Remote Desktop from Microsoft gives me access to my home computer from anywhere with an internet connection, and has proved invaluable on the various occasions.</p>
+							
+							</section>
+					</div>
+				</section>
+				
+			<!-- Nav -->
+				<script type="text/javascript" src="../../assets/js/scripts.js"></script>
+				<script type='text/javascript' > 
+					var rootPath = '../../'; 
+				</script>
+				<script type="text/javascript">writeNav()</script>
+				
+			<!-- Footer -->
+				<script type="text/javascript">writeFooter()</script>
+
+		</div>
+
+		<!-- Scripts -->
+			<script type="text/javascript">writeScripts()</script>
+			
+		<!-- Image expanding handlers -->
+			<script type='text/javascript' > 
+				$(".dsOnly").one("click", expandImage);
+			</script>
+
+	</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<!--
+	Based Upon Landed by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html style="width:100%; height:100%;">
+	<head>
+		<title>RoboSim</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="../../assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="../../assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="../../assets/css/ie8.css" /><![endif]-->
+		
+		<!-- SEO Stuff -->
+		<META NAME="description" CONTENT="Placeholder PDF page">
+		<META NAME="keyword" CONTENT="pdf,viewer,david,xiao,xiao93,davidxiao,davidxiao93,ucl,computer,science,compsci">
+			
+		<!-- favicon stuff -->
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+		
+		<style type="text/css">
+		<!--
+		
+		div+ div
+		{
+			height:100%;  
+			display:table-row;
+
+		}
+		div+ div+ div
+		{
+			height:auto;  
+		}
+		-->
+		</style>
+	</head>
+	<body style="width:100%; height:100%; display:table;">
+		<div id="page-wrapper">
+			<!-- Nav -->
+				<script type="text/javascript" src="assets/js/scripts.js"></script>
+				<script type='text/javascript' > 
+					var rootPath = ''; 
+				</script>
+				<script type="text/javascript">writeNav()</script>
+		</div>
+		<div id="page-wrapper" class="container">
+			<section id="pdf-holder" style="height:100%; margin-top:0;">
+				<header id="pdf-missing"class="major">
+					<h2><br/>Url is missing target!</h2>
+				</header>
+				<object id="pdf-container" data="" type="application/pdf" width="100%" height="100%">
+					<header class="major">
+						<h2><br/>It appears that this browser has no PDF plugin! </h2>
+					</header>
+					<section id="DownloadButton" class="wrapper style1 align-center">
+						<div class="container">
+							<div class="12u$ 12u$(medium) 12u$(xsmall)">
+								<h3>If the download has not already started,</h3>
+								<a id="pdf-manualdl" href="" class="button">Click here</a>	
+							</div>
+						</div>
+					</section>
+					<iframe id="pdf-autodl" src="" height="0" width="0">
+					</iframe>
+				</object>
+			</section>
+			
+		</div>
+
+		<div id="page-wrapper">
+		<!-- Footer -->
+			<script type="text/javascript">writeFooter()</script>
+		</div>
+		
+		<script type="text/javascript">var par = 'pdf=';
+	var url = parent.document.URL;
+	var index = url.indexOf(par);
+	if (index == -1){
+		// no pdf parsed
+		var pdfHolder = document.getElementById("pdf-holder");
+		var pdfContainer = document.getElementById("pdf-container");
+		pdfHolder.removeChild(pdfContainer);
+		document.title = "Missing URL target!";
+	} else {
+		var pdf = url.substring(index + par.length, url.length);
+		var pdfHolder = document.getElementById("pdf-holder");
+		var pdfMissing = document.getElementById("pdf-missing");
+		pdfHolder.removeChild(pdfMissing);
+		
+		var pdfContainer = document.getElementById("pdf-container");
+		if (pdfContainer != null)
+		{
+			pdfContainer.setAttribute('data', pdf);
+		}
+		
+		var pdfManualdl = document.getElementById("pdf-manualdl");
+		if (pdfManualdl != null)
+		{
+			pdfManualdl.setAttribute('href', pdf);
+		}
+		
+		var pdfAutodl = document.getElementById("pdf-autodl");
+		if (pdfAutodl != null)
+		{
+			pdfAutodl.setAttribute('src', pdf);
+		}
+		
+		document.title = pdf;
+		
+	}</script>
+		
+		<!-- Scripts -->
+		<script type="text/javascript">writeScripts()</script>
+
+	</body>
+</html>

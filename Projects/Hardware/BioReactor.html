@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<!--
+	Based Upon Landed by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>BioReactor</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="../../assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="../../assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="../../assets/css/ie8.css" /><![endif]-->
+		
+		<!-- SEO Stuff -->
+		<META NAME="description" CONTENT="A page about the BioReactor project that was a part of the ENGS101P module">
+		<META NAME="keyword" CONTENT="engs101p,bioreactor,david,xiao,xiao93,davidxiao,davidxiao93,ucl,computer,science,compsci">
+			
+		<!-- favicon stuff -->
+		<link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico">
+	</head>
+	<body>
+		<div id="page-wrapper">
+			<!-- Balance Game -->
+				<section id="BioReactor" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>BioReactor</h2>
+						</header>
+						<!-- Content -->
+							<section id="content">
+							
+								<p>In November of 2015, I was assigned to a team of around thirty people to attempt a challenge that was given by the Engineering Department of UCL. The thirty of us were then split into three sub-teams according to our discipline. Our sub-team consisted of computer scientists and electrical engineers, and our task was to develop the computer systems and mechanical components of a bio-reactor.</p>
+								
+								<img class="image dsOnly" src="BioReactor/microcontroller.jpg" alt="" />
+								<p>This task required me and my fellow computer scientists to work with a microcontroller which we were unfamiliar with. As I had been successful in getting an Engduino to communicate via serial port with a computer in the past, our team leader, Vishal Rajagopal, gave me the task of creating a link between a computer and the microcontroller. </p>
+								
+								<img class="image dsOnly" src="BioReactor/processing.jpg" alt="" />
+								<p>I used Processing as it was an easy way to create a graphical interface that would also be able to work with the serial port. The main challenge was keeping the Processing program in sync with the microcontroller, as at first I simply used a timing system. Eventually this was changed into a communication where exactly one side is reading and exactly one side is writing.</p>
+								
+								<p>In hindsight, this is definitely not the most efficient method, and I would really like to go back to it to improve it. However, the implementation we had was created within a short time frame and worked reliably.</p>
+								
+			
+							</section>
+					</div>
+				</section>
+				
+			<!-- Nav -->
+				<script type="text/javascript" src="../../assets/js/scripts.js"></script>
+				<script type='text/javascript' > 
+					var rootPath = '../../'; 
+				</script>
+				<script type="text/javascript">writeNav()</script>
+				
+			<!-- Footer -->
+				<script type="text/javascript">writeFooter()</script>
+
+		</div>
+
+		<!-- Scripts -->
+			<script type="text/javascript">writeScripts()</script>
+			
+		<!-- Image expanding handlers -->
+			<script type='text/javascript' > 
+				$(".dsOnly").one("click", expandImage);
+			</script>
+
+	</body>
+</html>

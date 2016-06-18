@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<!--
+	Based Upon Landed by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Cities Unlocked PCB</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="../../assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="../../assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="../../assets/css/ie8.css" /><![endif]-->
+		
+		<!-- SEO Stuff -->
+		<META NAME="description" CONTENT="A page about the firmware I contributed to during my internship at Microsoft in summer 2015">
+		<META NAME="keyword" CONTENT="internship,microsoft,firmware,pcb,david,xiao,xiao93,davidxiao,davidxiao93,ucl,computer,science,compsci">
+			
+		<!-- favicon stuff -->
+		<link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico">
+	</head>
+	<body>
+		<div id="page-wrapper">
+			<!-- Balance Game -->
+				<section id="Cities Unlocked PCB" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>Cities Unlocked PCB</h2>
+						</header>
+						<!-- Content -->
+							<section id="content">
+								
+								<img class="image dsOnly" src="CitiesUnlockedPCB/pcb.jpg" alt="" />
+								<p>After creating the DSP mixing filter during my internship in 2015, I was then tasked with helping the development of a firmware of a PCB from a project called Cities Unlocked. </p>
+								<section id="sectionButton" class="align-center">
+									<div class="container">
+										<div class="12u$ 12u$(medium) 12u$(xsmall)">
+											<a href="http://www.citiesunlocked.org.uk/" class="button">Cities Unlocked Project Website</a>
+										</div>
+									</div>
+								</section>
+							
+								
+								<img class="image dsOnly" src="CitiesUnlockedPCB/pcbinbox.jpg" alt="" />
+								<p>I was given a version of the firmware that was "hacked together" according to my team's leader Alistair Wharton. The PCB had a small ARM processor, a Bluetooth module and an IMU package that contained a compass, gyroscope and accelerometer sensors as well as built in fusion modes where more accurate readings from the IMU were generated. The goal of the PCB is to communicate with a phone application, where the phone could send commands to the PCB, and the PCB would respond with the information the phone requested.</p>
+								
+								<p>I was tasked to adding various features into the code, debugging various known bugs and where possible eliminate them. To do this, I worked on creating a way to create a simple "debugger" that would print out messages at various points in the code so that we could track the firmware's progress in its loop. One of the main areas that my team leader was unhappy about was the turnaround time from sending a message from the phone to receiving the message from the PCB on the phone was too long. I was able to improve the firmware in the PCB by removing several bottlenecks that prevented the sensors from reading at their advertised rate. </p>
+								
+								<img class="image dsOnly" src="CitiesUnlockedPCB/windowsPhone.jpg" alt="" />
+								<p>Throughout the development of the firmware, I was also working on a companion Windows Phone application that would allow us to demonstrate all of the commands that could be sent to the PCB. Information about that application can be found here:</p>
+								
+								<section id="sectionButton" class="align-center">
+									<div class="container">
+										<div class="12u$ 12u$(medium) 12u$(xsmall)">
+											<a href="../WindowsPhone/CitiesUnlocked.html" class="button">Cities Unlocked Test Application</a>
+										</div>
+									</div>
+								</section>
+								
+								<p>After a few weeks of development on the firmware, we were given a deadline that we had not foreseen or warned about. Thus there were several features that were left unfinished, but we instead worked on polishing the code into a state where another team would be able to pick up its development easily.</p>
+								
+								<p>In the end I am pleased with the contribution I have made to the project. I have been able to experiment with C++ and exercise my brain into thinking of ways around bottlenecks and practised debugging embedded hardware.</p>
+		
+							</section>
+					</div>
+				</section>
+				
+			<!-- Nav -->
+				<script type="text/javascript" src="../../assets/js/scripts.js"></script>
+				<script type='text/javascript' > 
+					var rootPath = '../../'; 
+				</script>
+				<script type="text/javascript">writeNav()</script>
+				
+			<!-- Footer -->
+				<script type="text/javascript">writeFooter()</script>
+
+		</div>
+
+		<!-- Scripts -->
+			<script type="text/javascript">writeScripts()</script>
+			
+		<!-- Image expanding handlers -->
+			<script type='text/javascript' > 
+				$(".dsOnly").one("click", expandImage);
+			</script>
+
+	</body>
+</html>
