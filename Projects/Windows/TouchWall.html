@@ -32,12 +32,12 @@
 						<!-- Content -->
 							<section id="content">
 								
-							<img class="image dsOnly" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="TouchWall/kinect2.jpg" alt="" />
+							<img class="image dsOnly" src="../../assets/loader.gif" data-src="TouchWall/kinect2.jpg" alt="" />
 							<p>During the second term of my first year of UCL, I was placed in a team with Mark Menezes and Pratek Dahal. Together we were given a project to use a Kinect 2 sensor together with a projector to turn a blank surface into an interactive screen. This project introduced me to using GIT as a means of version control, as well as the C# programming language. </p>
 							
 							<p>After playing around with a Kinect 1 version of what we were tasked to create, I set about modifying the application to use the Kinect 2 SDK and very quickly we had a working prototype that was sufficient for demonstration.</p>
 							
-							<img class="image dsOnly" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="TouchWall/idea.jpg" alt="" />
+							<img class="image dsOnly" src="../../assets/loader.gif" data-src="TouchWall/idea.jpg" alt="" />
 							<p>One of the main problems was the lack of resolution from the Kinect 2 sensor. As the sensor was positioned to the side, the resolution in the x direction was dependent on the depth resolution. Thus much of the project's development was focused on taking the data to make the cursor coordinate move smoothly.</p>
 
 							<p>After a lot of experimentation, our final solution was to use a modified exponential filter, where the smoothing factor is dependent on the distance that the finger has moved. I realised we could do this because we wanted to make the movements smooth if the finger is moving slower, but the need for smoothness was not as necessary when moving fast.</p>
@@ -49,7 +49,7 @@
 							</div>
 							<p>Once the application knew the coordinates, the next task was to convert it to cursor coordinates. This required the application to know the physical dimensions of the display, so some experimentation into calibrating the application was made. Our client also wanted us to experiment with detecting multiple fingers. An initial version was created for each of these tasks, but further development was put on hold due to time constraints.</p>
 
-							<img class="image dsOnly" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="TouchWall/appSS.jpg" alt="" />
+							<img class="image dsOnly" src="../../assets/loader.gif" data-src="TouchWall/appSS.jpg" alt="" />
 							<p>In the end, I am very pleased with the end result. The coordinates that the application reported improved during the development, and comparing what we ended with to what we started with indicates a significant improvement. Had more time be given, it would have been nice to try to nail the multipoint detection.</p>
 							
 							<p>At the request of the module lecturer, I was asked to put our team's work onto Github, which you can find here:</p>
