@@ -32,7 +32,7 @@
 						<!-- Content -->
 							<section id="content">
 								
-								<img class="image dsOnly" src="EngduinoBluetooth/engduino.jpg" alt="" />
+								<img class="image dsOnly" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="EngduinoBluetooth/engduino.jpg" alt="" />
 								<p>As part of the ENGS101P module, we were tasked with creating a Coding Curriculum using TouchDevelop. In order to make it engaging to younger students, we were given a scenario where the students needed to create a "pot hole sensor" using a phone running TouchDevelop and an Engduino. My task was to work out how to get the Bluetooth connection to communicate with an Engduino with a Bluetooth module installed.</p>
 								
 								<p>In order for TouchDevelop to be able to use the Bluetooth radio on the phone, it needed to be exported via Cordova to generate a (more) native application. However I had multiple problems in attempting to achieve this. I worked with fellow Student Computer Scienctist Robert Soultanaev to work out where the problem was.</p>
@@ -43,12 +43,12 @@
 							
 								<p>After the TouchDevelop library was fixed, we we able to get the Engduino to communicate with the Android app freely. Now, we faced a different issue, how to get data back. We noticed that we were successful in getting the Engduino to send data over the serial, but for some reason, the application wouldn't report the data. I then discovered that the reason was a difference in delimiter. </p>
 								
-								<img class="image dsOnly" src="EngduinoBluetooth/delimitercode.jpg" alt="" />
+								<img class="image dsOnly" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="EngduinoBluetooth/delimitercode.jpg" alt="" />
 								<p>Peli's sample application assumed that the delimiter was the new line character, when experimentation with the native Bluetooth terminals showed me that this wasn't the case. Once I changed the delimiter, the information was clearly shown, and the strings were ready for parsing.</p>
 								
 								<div style="margin: 1em auto; max-height:720px; maxwidth:1280px; overflow:hidden;">
 									<div class="responsive-container">
-										<iframe width="1920" height="1080" src="https://www.youtube.com/embed/utCvSYz9OCg" frameborder="0" allowfullscreen></iframe>
+										<iframe width="1920" height="1080" src="" data-src="https://www.youtube.com/embed/utCvSYz9OCg" frameborder="0" allowfullscreen></iframe>
 									</div>
 								</div>
 								

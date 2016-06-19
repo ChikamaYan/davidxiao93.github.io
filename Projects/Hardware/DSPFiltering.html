@@ -32,10 +32,10 @@
 						<!-- Content -->
 							<section id="content">
 							
-								<img class="image dsOnly" src="DSPFiltering/nucleo.jpg" alt="" />
+								<img class="image dsOnly" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="DSPFiltering/nucleo.jpg" alt="" />
 								<p>As part of my Internship in 2015, I was asked to create a small prototype that could take in two stereo audio signals and output a single stereo audio signal. The prototype was based upon a Nucleo STM32F334 as that was what we had at hand.</p>
 							
-								<img class="image dsOnly" src="DSPFiltering/prototype.jpg" alt="" />
+								<img class="image dsOnly" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="DSPFiltering/prototype.jpg" alt="" />
 								<p>Very quickly I was able to create a prototype that was able to mix the two input stereo signals in a linear way. My next task was to add a filter that can be applied to one of the input stereo signals and then mixed with the other stereo signal. This required me to do research into DSP filters, most notably Finite Impulse Response (FIR) filters.</p>
 								
 								<p>I was quite lucky that there existed a DSP library for the board that I was working on, so I set about incorporating it into the program. It took a little bit of trial and error to get the functionality to work as I wanted, particularly as I had to run FIR filters on both left and right audio channels completely independently - something I did not realise at first as I thought I could share their resources.</p>

@@ -99,6 +99,8 @@ function writeScripts() {
 			<script type="text/javascript" src="' + rootPath + 'assets/js/util.js"></script>\
 			<!--[if lte IE 8]><script type="text/javascript" src="' + rootPath + 'assets/js/ie/respond.min.js"></script><![endif]-->\
 			<script type="text/javascript" src="' + rootPath + 'assets/js/main.js"></script>\
+			<script type="text/javascript"> $(".dsOnly").one("click", expandImage);	</script>\
+			<script type="text/javascript"> window.onload = init; </script>\
 	');
 }
 
@@ -111,4 +113,20 @@ function shrinkImage() {
 	$(this).one("click", expandImage);
 	$(this).stop();
     $(this).animate({width: "240px"}, 300);
+}
+
+function init() {
+	var imgDefer = document.getElementsByTagName('img');
+	for (var i=0; i<imgDefer.length; i++) {
+		if(imgDefer[i].getAttribute('data-src')) {
+				imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
+		} 
+	} 
+	var vidDefer = document.getElementsByTagName('iframe');
+	for (var i=0; i<vidDefer.length; i++) {
+		if(vidDefer[i].getAttribute('data-src')) {
+			vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
+		} 
+	} 
+
 }
