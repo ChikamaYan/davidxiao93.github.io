@@ -14,10 +14,7 @@ function writeNav(){
 				<ul>\
 					<li><a href="' + rootPath + 'index.html">Home</a></li>\
 					<li><a href="' + rootPath + 'AboutMe.html">About Me</a></li>\
-					<li><a href="' + rootPath + 'blog/">Blog</a></li>\
-					<li>\
-						<a href="' + rootPath + 'UCL.html">UCL</a>\
-					</li>\
+					<li><a href="' + rootPath + 'UCL.html">UCL</a></li>\
 					<li>\
 						<a href="' + rootPath + 'Projects.html">Projects</a>\
 						<ul>\
@@ -66,6 +63,7 @@ function writeNav(){
 							</li>\
 						</ul>\
 					</li>\
+					<li><a href="' + rootPath + 'GoogleInternship.html">Google Internship</a></li>\
 				</ul>\
 			</nav>\
 		</header>\
